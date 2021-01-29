@@ -5,3 +5,5 @@
 /src/GraphQLClient/obj
 /src/GraphQLService/obj
 /.vs
+/src/GraphQLClient/bin
+/src/GraphQLService/bin

@@ -31,6 +31,7 @@ namespace GraphQLService
             services.AddControllers();
             services.AddGraphQL(SchemaBuilder.New()
             .AddQueryType<Query>()
+            .AddMutationType<Mutation>()
             .ModifyOptions(o => o.RemoveUnreachableTypes = true)
             .Create());
         }
