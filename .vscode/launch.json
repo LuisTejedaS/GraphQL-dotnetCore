@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/GraphQLService/bin/Debug/netcoreapp3.1/GraphQLService.dll",
+            "program": "${workspaceFolder}/src/GraphQLService/bin/Debug/net5.0/GraphQLService.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/GraphQLService",
             "stopAtEntry": false,
