@@ -27,6 +27,17 @@ namespace GraphQLService.Graphql
 
     }
 
+    [ExtendObjectType(Name = "Mutation")]
+    public class AccountMutations
+    {
+        public Account CreateAccount(Account inputAccount)
+        {
+            return inputAccount;
+        }
+
+    }
+
+
 }
 
 

@@ -26,8 +26,9 @@ namespace GraphQLService
             services.AddControllers();
             services.AddGraphQL(SchemaBuilder.New()
             .AddQueryType<Query>()
-             .AddType<AccountQueries>()
             .AddMutationType<Mutation>()
+             .AddType<AccountQueries>()
+             .AddType<AccountMutations>()
             .ModifyOptions(o => o.RemoveUnreachableTypes = true)
             .Create());
             services.AddSwaggerGen(c =>

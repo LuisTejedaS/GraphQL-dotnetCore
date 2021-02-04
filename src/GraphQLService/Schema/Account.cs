@@ -18,15 +18,6 @@ namespace GraphQLService.Schema
     }
 
 
-
-    public class Mutation
-    {
-
-        public Account CreateAccount(Account inputAccount)
-        {
-            return inputAccount;
-        }
-    }
 }
 
 
