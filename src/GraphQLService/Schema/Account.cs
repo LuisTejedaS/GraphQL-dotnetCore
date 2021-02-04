@@ -17,27 +17,7 @@ namespace GraphQLService.Schema
         public int Level { get; set; }
     }
 
-    public class Query
-    {
-        [GraphQLNonNullType]
-        public IEnumerable<Account> GetAccounts()
-        {
-            var accounts = new List<Account>{
-            new Account {
-                Code = "1",
-                Name = "Banks",
-               Level = 1,
-            },
-            new Account {
-                Code = "2",
-                Name = "Suppliers",
-               Level = 1,
-            }
-        };
 
-            return accounts;
-        }
-    }
 
     public class Mutation
     {
